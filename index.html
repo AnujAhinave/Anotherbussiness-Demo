@@ -56,9 +56,9 @@
             </div>
 
             <div class="hidden lg:flex items-center gap-8 text-[11px] font-black uppercase tracking-widest text-slate-500">
-                <button onclick="manualScroll('about')" class="text-pink-600 transition-colors">Home</button>
+                <button onclick="manualScroll('home-top')" class="text-pink-600 transition-colors">Home</button>
                 <a href="about.html" class="hover:text-pink-600 transition-colors">About</a>
-                <button onclick="manualScroll('treatments')" class="hover:text-pink-600 transition-colors uppercase">Treatments</button>
+                <a href="treatments.html" class="hover:text-pink-600 transition-colors uppercase">Treatments</a>
                 <a href="results.html" class="hover:text-pink-600 transition-colors">Results</a>
             </div>
 
@@ -73,7 +73,7 @@
         </div>
     </nav>
 
-    <header id="about" class="unified-hero-bg border-b border-slate-200 pt-20 pb-28 scroll-mt-20">
+    <header id="home-top" class="unified-hero-bg border-b border-slate-200 pt-20 pb-28 scroll-mt-20">
         <div class="max-w-6xl mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
                 <div class="w-full lg:w-3/5 text-center lg:text-left order-2 lg:order-1">
@@ -116,7 +116,7 @@
         </div>
     </header>
 
-    <section id="treatments" class="py-32 bg-white scroll-mt-20">
+    <section class="py-32 bg-white">
         <div class="max-w-6xl mx-auto px-6">
             <div class="text-center mb-20">
                 <h2 class="text-4xl font-black text-slate-900 uppercase tracking-tight">Ambarnath's First Laser Center</h2>
@@ -204,7 +204,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 hover-scale">
                     <p class="text-slate-600 italic leading-relaxed mb-8 relative z-10">
                         "The Carbon Laser Peel is like magic for oily skin. I got an instant glow for my sister's wedding. Best aesthetic clinic in Ambarnath East."
@@ -217,7 +216,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="testimonial-card bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 hover-scale">
                     <p class="text-slate-600 italic leading-relaxed mb-8 relative z-10">
                         "Excellent doctor who actually listens. My scalp dandruff issue was solved in just a month. Very professional care."
@@ -312,28 +310,6 @@
             document.getElementById('thank-you-page').style.display = 'block';
             manualScroll('booking');
         }
-
-        // Logic for landing from About page
-        window.addEventListener('load', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const scrollTarget = urlParams.get('scroll');
-            
-            if (scrollTarget) {
-                // Wait for the browser to stabilize (hero images loading etc.)
-                setTimeout(() => {
-                    manualScroll(scrollTarget);
-                }, 400); 
-
-                // A safety second-check: In case layout shifted after 400ms
-                setTimeout(() => {
-                    const section = document.getElementById(scrollTarget);
-                    const currentTop = section.getBoundingClientRect().top;
-                    if (Math.abs(currentTop - 80) > 10) { // If more than 10px off
-                         manualScroll(scrollTarget);
-                    }
-                }, 1000);
-            }
-        });
     </script>
 </body>
 </html>
