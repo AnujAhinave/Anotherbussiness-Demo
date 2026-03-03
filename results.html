@@ -3,157 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results & Case Studies | Dr. Reshma's Clinic</title>
+    <title>Adv. Jason Smith | Professional Legal Portfolio</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
-        .gradient-text { background: linear-gradient(90deg, #be185d, #6366f1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hover-scale { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .hover-scale:hover { transform: translateY(-5px); }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Outfit', sans-serif; }
+        .heading-bold { font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+        .gold-accent { color: #C5A059; }
+        .bg-navy { background-color: #0F172A; }
+        .legal-border { border-left: 3px solid #C5A059; padding-left: 1.25rem; }
+        #thank-you-page { display: none; }
+        
+        /* Clean UI - No Flashy Animations */
+        input, textarea { border-radius: 0 !important; }
+        button { border-radius: 2px !important; }
     </style>
 </head>
-<body class="bg-slate-50 font-sans text-slate-900 antialiased">
+<body class="bg-white text-slate-900 antialiased">
 
-    <nav class="bg-white/95 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <a href="index.html" class="flex items-center gap-3">
-                    <div class="w-10 h-10 bg-pink-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-pink-200">
-                        <i class="fas fa-hand-holding-medical text-xl"></i>
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="font-black text-xl tracking-tighter uppercase text-slate-900 leading-none">
-                            Dr. Reshma's <span class="text-pink-600 italic">Clinic</span>
-                        </span>
-                        <span class="text-[9px] font-bold tracking-[0.3em] text-slate-400 uppercase mt-1">Ambarnath East</span>
-                    </div>
-                </a>
+    <nav class="sticky top-0 z-50 bg-[#0F172A] text-white py-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            <div>
+                <span class="heading-bold text-lg uppercase block">Adv. Jason Smith</span>
+                <span class="text-[7px] gold-accent tracking-[0.4em] uppercase font-bold">Kalyan District Court | International Counsel</span>
             </div>
-
-            <div class="hidden lg:flex items-center gap-8 text-[11px] font-black uppercase tracking-widest text-slate-500">
-                <a href="index.html" class="hover:text-pink-600 transition-colors">Home</a>
-                <a href="about.html" class="hover:text-pink-600 transition-colors">About</a>
-                <a href="treatments.html" class="hover:text-pink-600 transition-colors">Treatments</a>
-                <a href="results.html" class="text-pink-600 border-b-2 border-pink-600 pb-1">Results</a>
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="tel:9969590101" class="hidden sm:flex items-center gap-2 border-2 border-pink-600 text-pink-600 px-6 py-2.5 rounded-full font-bold hover:bg-pink-50 transition text-sm">
-                    <i class="fas fa-phone-alt"></i> Call Now
-                </a>
-                <a href="index.html?scroll=booking" class="bg-pink-600 text-white px-7 py-3 rounded-full font-bold hover:bg-pink-700 shadow-lg shadow-pink-200 text-sm transition-all">
-                    Book Now
-                </a>
+            <div class="hidden lg:flex items-center gap-12 text-[9px] font-bold uppercase tracking-widest">
+                <span class="text-white/60">Counsel: +91 9969590101</span>
+                <button onclick="manualScroll('practice')" class="hover:text-[#C5A059] transition">Expertise</button>
+                <button onclick="manualScroll('contact')" class="bg-[#C5A059] text-[#0F172A] px-6 py-2">Free Consultation</button>
             </div>
         </div>
     </nav>
 
-    <section class="py-12 bg-white border-b border-slate-100">
-        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
-            <div class="md:w-1/4">
-                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=400" 
-                     class="rounded-full w-32 h-32 object-cover border-4 border-pink-50 mx-auto shadow-lg" alt="Dr. Reshma">
+    <header class="bg-[#0F172A] text-white py-20 border-b border-[#C5A059]/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="heading-bold text-5xl md:text-7xl uppercase leading-[1.1] mb-8">
+                    Strategic Judicial <br><span class="gold-accent">Representation.</span>
+                </h1>
+                <p class="text-slate-400 text-lg leading-relaxed font-light border-l border-white/20 pl-6">
+                    Providing high-stakes litigation and international corporate advisory. Focused on absolute integrity and judicial excellence within the Kalyan circuit and beyond.
+                </p>
             </div>
-            <div class="md:w-3/4">
-                <h1 class="text-3xl font-black text-slate-900 leading-none">Dr. Reshma S. Verma</h1>
-                <p class="text-pink-600 font-black text-[10px] uppercase tracking-[0.2em] mt-3">BHMS • P.G.D.E.M.S • C.C.H • Reg: 46591</p>
-                <p class="text-slate-500 text-sm italic mt-2 font-medium">Cosmetologist • Trichologist • Dietician</p>
-                <div class="h-1 w-12 bg-slate-200 my-4 mx-auto md:mx-0"></div>
-                <p class="text-slate-400 text-[10px] uppercase font-bold tracking-widest">Ambarnath's First Laser Skin Care Center</p>
+        </div>
+    </header>
+
+    <section class="bg-slate-50 py-16 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+                <div class="text-center">
+                    <span class="heading-bold text-3xl gold-accent block">14+</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Years of Practice</span>
+                </div>
+                <div class="text-center">
+                    <span class="heading-bold text-3xl text-[#0F172A] block">250+</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Matters Handled</span>
+                </div>
+                <div class="text-center border-x border-slate-200 px-4">
+                    <span class="heading-bold text-3xl gold-accent block">82%</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Favorable Outcomes</span>
+                </div>
+                <div class="text-center">
+                    <span class="heading-bold text-3xl text-[#0F172A] block">₹25+ Cr</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Recovered / Secured</span>
+                </div>
+                <div class="text-center">
+                    <span class="heading-heavy text-3xl gold-accent block">100+</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Contracts Drafted</span>
+                </div>
+                <div class="text-center">
+                    <span class="heading-heavy text-3xl text-[#0F172A] block">10+</span>
+                    <span class="text-[8px] uppercase font-bold tracking-widest text-slate-500">Judicial Forums</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-slate-50">
-        <div class="max-w-6xl mx-auto px-6">
+    <section id="practice" class="py-24 bg-white scroll-mt-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="heading-bold text-4xl uppercase mb-20 border-b-2 border-slate-100 pb-4 inline-block">Areas of Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="legal-border">
+                    <h3 class="heading-bold text-lg uppercase mb-8 text-[#0F172A]">Corporate & Commercial</h3>
+                    <div class="space-y-10 text-sm text-slate-600">
+                        <div>
+                            <span class="block font-bold text-[10px] gold-accent uppercase tracking-widest mb-2">Commercial Contracts</span>
+                            <p class="leading-relaxed">Drafting Master Service Agreements (MSA), SaaS terms, and international vendor contracts for global tech entities.</p>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-[10px] gold-accent uppercase tracking-widest mb-2">Debt & MSME Recovery</span>
+                            <p class="leading-relaxed">Specialized recovery suits under the MSMED Act for industrial and corporate clients in Kalyan and Bhiwandi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-border border-[#0F172A]">
+                    <h3 class="heading-bold text-lg uppercase mb-8 text-[#0F172A]">Property & Civil Law</h3>
+                    <div class="space-y-10 text-sm text-slate-600">
+                        <div>
+                            <span class="block font-bold text-[10px] text-[#0F172A] uppercase tracking-widest mb-2">Real Estate Litigation</span>
+                            <p class="leading-relaxed">Title searches, property clearance, and ancestral dispute resolution in the Kalyan/Thakurli development belt.</p>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-[10px] text-[#0F172A] uppercase tracking-widest mb-2">RERA & Consumer Law</span>
+                            <p class="leading-relaxed">Expert representation in the MahaRERA tribunal for delayed possession, builder negligence, and housing rights.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-border">
+                    <h3 class="heading-bold text-lg uppercase mb-8 text-[#0F172A]">Judicial & IP Defense</h3>
+                    <div class="space-y-10 text-sm text-slate-600">
+                        <div>
+                            <span class="block font-bold text-[10px] gold-accent uppercase tracking-widest mb-2">Intellectual Property</span>
+                            <p class="leading-relaxed">Global trademark registration, copyright filings, and specialized patent infringement litigation.</p>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-[10px] gold-accent uppercase tracking-widest mb-2">Criminal Defense</span>
+                            <p class="leading-relaxed">Strategic legal representation in high-stakes criminal proceedings, bail applications, and judicial appeals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-[#0F172A] text-white py-24 scroll-mt-24">
+        <div class="max-w-4xl mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-black text-slate-900 uppercase tracking-tight">Clinical Case Studies</h2>
-                <p class="text-slate-400 mt-2 italic text-sm">Real Results. Proven Expertise.</p>
+                <h2 class="heading-bold text-4xl uppercase gold-accent">Direct Judicial Inquiry</h2>
+                <p class="text-slate-500 mt-4 uppercase tracking-[0.2em] text-[10px]">Office Contact: +91 9969590101</p>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                
-                <div class="bg-white p-6 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-white hover-scale">
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=500" class="w-full h-full object-cover grayscale" alt="Tattoo Before">
-                            <span class="absolute top-3 left-3 bg-black/70 text-white text-[9px] px-2 py-1 rounded font-black">BEFORE</span>
-                        </div>
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=500" class="w-full h-full object-cover" alt="Tattoo After">
-                            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[9px] px-2 py-1 rounded font-black">AFTER</span>
-                        </div>
+            
+            <div id="inquiry-form" class="bg-white/5 p-10 md:p-16 border border-white/10">
+                <form onsubmit="handleInquiry(event)" class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <input type="text" placeholder="Full Name" required class="bg-transparent border-b border-white/20 p-4 outline-none focus:border-[#C5A059] text-sm">
+                        <input type="tel" placeholder="Mobile Number" required class="bg-transparent border-b border-white/20 p-4 outline-none focus:border-[#C5A059] text-sm">
                     </div>
-                    <span class="text-pink-600 font-bold text-[10px] uppercase tracking-widest italic">The Wedding Prep</span>
-                    <h3 class="text-2xl font-black text-slate-900 mt-1 mb-2 tracking-tighter uppercase">Laser Tattoo Removal</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">90% ink clearance achieved for a flawless bridal look.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-white hover-scale">
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=500" class="w-full h-full object-cover grayscale" alt="Scalp Before">
-                            <span class="absolute top-3 left-3 bg-black/70 text-white text-[9px] px-2 py-1 rounded font-black">BEFORE</span>
-                        </div>
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=500" class="w-full h-full object-cover" alt="Scalp After">
-                            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[9px] px-2 py-1 rounded font-black">AFTER</span>
-                        </div>
-                    </div>
-                    <span class="text-pink-600 font-bold text-[10px] uppercase tracking-widest italic">Vacation Confidence</span>
-                    <h3 class="text-2xl font-black text-slate-900 mt-1 mb-2 tracking-tighter uppercase">Scalp Detox Therapy</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Complete removal of stubborn flakes and restoration of scalp health.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-white hover-scale">
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=500" class="w-full h-full object-cover grayscale" alt="Acne Before">
-                            <span class="absolute top-3 left-3 bg-black/70 text-white text-[9px] px-2 py-1 rounded font-black">BEFORE</span>
-                        </div>
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500" class="w-full h-full object-cover" alt="Acne After">
-                            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[9px] px-2 py-1 rounded font-black">AFTER</span>
-                        </div>
-                    </div>
-                    <span class="text-pink-600 font-bold text-[10px] uppercase tracking-widest italic">Interview Ready</span>
-                    <h3 class="text-2xl font-black text-slate-900 mt-1 mb-2 tracking-tighter uppercase">Carbon Laser Peel</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Significant reduction in active acne for a professional corporate edge.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-white hover-scale">
-                    <div class="grid grid-cols-2 gap-4 mb-6">
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500" class="w-full h-full object-cover grayscale" alt="Hair Before">
-                            <span class="absolute top-3 left-3 bg-black/70 text-white text-[9px] px-2 py-1 rounded font-black">BEFORE</span>
-                        </div>
-                        <div class="relative rounded-2xl overflow-hidden aspect-square bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?w=500" class="w-full h-full object-cover" alt="Hair After">
-                            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[9px] px-2 py-1 rounded font-black">AFTER</span>
-                        </div>
-                    </div>
-                    <span class="text-pink-600 font-bold text-[10px] uppercase tracking-widest italic">New Mom Recovery</span>
-                    <h3 class="text-2xl font-black text-slate-900 mt-1 mb-2 tracking-tighter uppercase">Hair Restoration</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Conservative care to reverse hair thinning postpartum.</p>
-                </div>
-
+                    <textarea placeholder="Legal Matter Details" rows="3" required class="w-full bg-transparent border-b border-white/20 p-4 outline-none focus:border-[#C5A059] text-sm"></textarea>
+                    <button type="submit" class="w-full bg-[#C5A059] text-[#0F172A] font-bold py-5 uppercase tracking-[0.2em] text-xs hover:bg-white transition">Submit for Review</button>
+                </form>
             </div>
-        </div>
-    </section>
-
-    <footer class="bg-[#0a1128] text-white py-16 border-t border-white/5">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <div class="flex justify-center gap-3 mb-6">
-                <div class="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center text-white text-xs">
-                    <i class="fas fa-hand-holding-medical"></i>
-                </div>
-                <span class="font-black text-lg tracking-tighter uppercase">Dr. Reshma's <span class="text-pink-600 italic">Clinic</span></span>
+            
+            <div id="thank-you-page" class="text-center py-10">
+                <i class="fas fa-check-circle gold-accent text-5xl mb-6"></i>
+                <h3 class="heading-bold text-2xl uppercase">Inquiry Successfully Filed</h3>
             </div>
-            <p class="text-slate-500 text-[10px] uppercase tracking-[0.4em]">
-                © 2026 Dr. Reshma's Skin, Hair & Aesthetic Clinic | Ambarnath East
-            </p>
         </div>
     </footer>
 
+    <script>
+        function manualScroll(id) {
+            const el = document.getElementById(id);
+            if(el) {
+                const offset = 64;
+                const pos = el.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({ top: pos, behavior: 'smooth' });
+            }
+        }
+        function handleInquiry(e) {
+            e.preventDefault();
+            document.getElementById('inquiry-form').style.display = 'none';
+            document.getElementById('thank-you-page').style.display = 'block';
+            manualScroll('contact');
+        }
+    </script>
 </body>
 </html>
