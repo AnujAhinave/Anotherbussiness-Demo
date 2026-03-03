@@ -14,29 +14,6 @@
         .gold-accent { color: #C5A059; }
         .bg-navy { background-color: #0F172A; }
         .legal-card:hover { border-top: 4px solid #C5A059; transition: all 0.3s ease; }
-        
-        /* Unified Technical Features */
-        #thank-you-page { display: none; }
-        .scroll-mt-20 { scroll-margin-top: 5rem; }
-    </style>
-</head>
-<body class="bg-slate-50 text-slate-900 antialiased">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate [Name] | International Legal Counsel & Advisor</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .gold-accent { color: #C5A059; }
-        .bg-navy { background-color: #0F172A; }
-        .legal-card:hover { border-top: 4px solid #C5A059; transition: all 0.3s ease; }
         #thank-you-page { display: none; }
         .scroll-mt-20 { scroll-margin-top: 5rem; }
     </style>
@@ -45,33 +22,29 @@
 
     <nav class="sticky top-0 z-50 bg-[#0F172A]/95 backdrop-blur-md border-b border-white/10 text-white">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex flex-col">
+            <a href="index.html" class="flex flex-col hover:opacity-90 transition">
                 <span class="text-xl font-black tracking-tight uppercase leading-none">Adv. [Full Name]</span>
                 <span class="text-[9px] tracking-[0.3em] gold-accent font-bold uppercase mt-1 italic">Legal Excellence & Integrity</span>
-            </div>
+            </a>
 
             <div class="hidden lg:flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest opacity-80">
+                <a href="index.html" class="hover:gold-accent transition">Home</a>
                 <a href="about.html" class="hover:gold-accent transition">Meet Our Attorneys</a>
-                <a href="practice.html" class="hover:gold-accent transition">Practice Areas</a>
-        
+                <a href="index.html#practice" class="hover:gold-accent transition">Practice Areas</a>
                 <a href="news.html" class="text-[#C5A059] hover:text-white transition italic">In The News</a>
-          
             </div>
 
             <div class="flex items-center gap-4">
                 <a href="tel:9969590101" class="hidden sm:block border border-white/20 px-4 py-2 rounded text-[10px] font-bold tracking-widest hover:border-white transition">
                     +91 9969590101
                 </a>
-                <button onclick="manualScroll('contact')" class="bg-[#C5A059] text-[#0F172A] px-6 py-2.5 rounded text-[8px] font-black uppercase tracking-widest hover:bg-white transition shadow-lg">
+                <a href="index.html#contact" class="bg-[#C5A059] text-[#0F172A] px-6 py-2.5 rounded text-[8px] font-black uppercase tracking-widest hover:bg-white transition shadow-lg">
                     Get Free Consultation
-                </button>
+                </a>
             </div>
         </div>
     </nav>
 
-
-
-    
     <header id="home-top" class="bg-[#0F172A] text-white py-24 relative overflow-hidden border-b border-[#C5A059]/30 scroll-mt-20">
         <div class="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-2/3">
@@ -182,7 +155,7 @@
             }
         }
 
-        // UNIFIED FORM HANDLER (THANK YOU PAGE)
+        // UNIFIED FORM HANDLER
         function handleInquiry(e) {
             e.preventDefault();
             document.getElementById('inquiry-form').style.display = 'none';
