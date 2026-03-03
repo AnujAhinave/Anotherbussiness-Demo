@@ -25,16 +25,16 @@
 
     <nav class="sticky top-0 z-50 bg-[#0F172A]/95 backdrop-blur-md border-b border-white/10 text-white">
         <div class="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
-            <div class="flex flex-col text-left">
-                <span class="text-lg md:text-xl font-black tracking-tight uppercase leading-none">Adv. [Name]</span>
-                <span class="text-[8px] md:text-[9px] tracking-[0.2em] gold-accent font-bold uppercase mt-1 italic uppercase">Expert Legal Counsel</span>
-            </div>
+            <a href="index.html" class="flex flex-col text-left hover:opacity-90 transition">
+                <span class="text-lg md:text-xl font-black tracking-tight uppercase leading-none">Adv. Anuj Ahinave</span>
+                <span class="text-[8px] md:text-[9px] tracking-[0.2em] gold-accent font-bold uppercase mt-1 italic">Legal Excellence & Integrity</span>
+            </a>
 
             <div class="hidden lg:flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest opacity-80">
                 <a href="index.html" class="hover:gold-accent transition">Home</a>
-                <a href="about.html" class="text-[#C5A059] transition border-b border-[#C5A059]">Our Team</a>
-                <a href="practice.html" class="hover:gold-accent transition">Practice Areas</a>
-                <a href="reviews.html" class="hover:gold-accent transition">Reviews</a>
+                <a href="adv.html" class="text-[#C5A059] transition border-b border-[#C5A059]">Our Team</a>
+                <a href="expertise .html" class="hover:gold-accent transition">Practice Areas</a>
+                <a href="newz.html" class="hover:gold-accent transition">In The News</a>
             </div>
 
             <div class="flex items-center gap-4">
